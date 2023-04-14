@@ -4,9 +4,11 @@ Este é um projeto para converter moedas usando a API Alpha Vantage. O projeto u
 
 ## 🚀 Começando
 
-The API allows for both synchronous and asynchronous conversions, and accepts a from_currency and a list of to_currencies along with the value to be converted. The endpoints follow the format /converter/{from_currency}, /converter/async/{from_currency} and converter/async/v2/{from_currency} + bodyJson for synchronous and asynchronous conversions, respectively.
+Essa é uma API para conversão de moedas usando a API Alpha Vantage. O projeto utiliza o FastAPI para lidar com solicitações e respostas HTTP.
 
-To use this project, you will need to add your Alpha Vantage API key as an environment variable in a .env file in the root directory of the project. The name of the environment variable should be ALPHAVANTAGE_APIKEY.
+A API permite conversões síncronas e assíncronas e aceita uma moeda de origem, uma lista de moedas de destino e o valor a ser convertido. Os endpoints seguem o formato /converter/{from_currency}, /converter/async/{from_currency} e /converter/async/v2/{from_currency} + bodyJson para conversões síncronas e assíncronas, respectivamente.
+
+Para usar este projeto, é necessário adicionar sua chave de API Alpha Vantage como uma variável de ambiente em um arquivo .env no diretório raiz do projeto. O nome da variável de ambiente deve ser ALPHAVANTAGE_APIKEY.
 
 ### 📋 Pré-requisitos
 
