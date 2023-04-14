@@ -1,6 +1,6 @@
 # FastAPI Currency Converter
 
-This is a project to convert currencies using the Alpha Vantage API. The project uses FastAPI to handle HTTP requests and responses.
+Este é um projeto para converter moedas usando a API Alpha Vantage. O projeto utiliza o FastAPI para lidar com as solicitações e respostas HTTP.
 
 ## 🚀 Começando
 
