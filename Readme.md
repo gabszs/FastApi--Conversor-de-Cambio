@@ -102,3 +102,5 @@ Foi usado [Git](https://git-scm.com/doc) para controle de versão.
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 - **Gabriel Carvalho** - Implementacao da API - [GabrielCarvalho](https://github.com/gabszs)
+
+- **linkedin** - [Gabriel Carvalho](https://www.linkedin.com/in/gabzsz/)
