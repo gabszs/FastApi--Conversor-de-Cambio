@@ -19,6 +19,7 @@ Para o projeto, somente e necessario o PYPOETRY e PYENV estalados e sua maquina,
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
 Para configurar e baixar o projeto localmente, siga os passos:
+
 1º Certifique-se de ter o git instaldo localmente
 
 2º Abra o terminal ou o prompt de comando e navegue até o diretório em que deseja clonar o repositório
@@ -87,9 +88,8 @@ EndPoint:
 127.0.0.1:8000/converter/async/BRl?to_currencies=USD,GBP&price=10
 ```
 
-## 🛠️ Construído com
+## 🛠️ FrameWorks utilizados no projeto
 
-Mencione as ferramentas que você usou para criar seu projeto
 
 - [FastApi](http://www.dropwizard.io/1.0.2/docs/) - O framework Rest usado para construir os endpoints
 - [Poetry](https://python-poetry.org/docs/) - Gerente de Dependência e de ambientes vituais
@@ -99,9 +99,8 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 Foi usado [Git](https://git-scm.com/doc) para controle de versão.
 
-## ✒️ Autores
+## ✒️ Autor
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 - **Gabriel Carvalho** - Implementacao da API - [GabrielCarvalho](https://github.com/gabszs)
 
