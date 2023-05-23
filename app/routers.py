@@ -31,7 +31,6 @@ def converter(
     
     from_currency = from_currency.upper()
     to_currencies = to_currencies.upper().split(",")
-    print(to_currencies)
 
     results = {"message": "success", "data": list()}
     converter = Converter(api_key=API_KEY)
@@ -84,7 +83,7 @@ async def async_converter_router(
 @router.post('/async/v2/{from_currency}', response_model=ConverterOutput)
 async def async_v2_converter_router(
     body: ConverterBody,
-    from_currency: str = Path(max_length=3, regex='^[a-zA-Z]{3}$'),
+    from_currency: str = Path(max_length=3, regex='^[a-zA-Z]{3}$')
 ):
     """
     This function is an async HTTP POST endpoint that receives a JSON payload body with the fields price and to_currencies, and a string from_currency that represents the source currency for the conversion.
