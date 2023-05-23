@@ -75,7 +75,7 @@ async def async_converter_router(
         corroutines.append(coro)
 
     gather_result = await gather(*corroutines)
-    # result = {f"${price} {from_currency} to {currency}": gather_result[count] for count, currency in enumerate(to_currencies)}
+    result = {f"${price} {from_currency} to {currency}": gather_result[count] for count, currency in enumerate(to_currencies)}
 
     return result
 

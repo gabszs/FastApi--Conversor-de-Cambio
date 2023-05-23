@@ -4,7 +4,7 @@ Este é um projeto para converter moedas usando a API Alpha Vantage. O projeto u
 
 ## 🚀 Começando
 
-Essa é uma API para conversão de moedas usando a API Alpha Vantage. O projeto utiliza o FastAPI para lidar com solicitações e respostas HTTP.
+cd Essa é uma API para conversão de moedas usando a API Alpha Vantage. O projeto utiliza o FastAPI para lidar com solicitações e respostas HTTP.
 
 A API permite conversões síncronas e assíncronas e aceita uma moeda de origem, uma lista de moedas de destino e o valor a ser convertido. Os endpoints seguem o formato /converter/{from_currency}, /converter/async/{from_currency} e /converter/async/v2/{from_currency} + bodyJson para conversões síncronas e assíncronas, respectivamente.
 
