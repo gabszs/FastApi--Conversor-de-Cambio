@@ -10,9 +10,13 @@ COPY ./pyproject.toml /
 RUN apt-get update -y && apt-get install curl -y \
     && curl -sSL https://install.python-poetry.org | python3 - \
     && poetry config virtualenvs.create false \
-    && poetry install \
+    && poetry install --no-root \
     && apt-get remove curl -y
 
-COPY ./app /app
+ADD . /app
+
 WORKDIR /app
 
+EXPOSE 5000
+
+CMD ["python", "main.py"]

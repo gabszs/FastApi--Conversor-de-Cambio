@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Path, Query
 from asyncio import gather
-from converter import Converter
+from app.converter import Converter
 from os import getenv
-from schemes import ConverterBody, ConverterOutput
+from app.schemes import ConverterBody, ConverterOutput
 
 API_KEY = getenv("ALPHAVANTAGE_APIKEY")
-router = APIRouter(prefix='/converter')
+router = APIRouter()
 
 
 #url-> /converter/{from_currency}?to_currencies=USD,JPN,GBP&price=5.19
@@ -65,7 +65,7 @@ async def async_converter_router(
     """
     
     from_currency = from_currency.upper()
-    to_currencies = to_currencies.split(",")
+    to_currencies = to_currencies.upper().split(",")
     converter = Converter(api_key=API_KEY)
     corroutines = list()
     result = dict()
